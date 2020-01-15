@@ -1,0 +1,22 @@
+.first-slide {
+  padding-top: 160px;
+  padding-bottom: 46px;
+
+  &__title {
+    color: #F2F2F2;
+    font-weight: bold;
+    line-height: 75px;
+    font-size: 3.2rem;
+    margin-bottom: 30px;
+    display: block;
+  }
+
+  &__slogan {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    color: #B5B3B2;
+    margin-bottom: 90px;
+    display: block;
+  }
+}

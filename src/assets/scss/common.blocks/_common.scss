@@ -1,0 +1,89 @@
+html, body {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.section {
+  overflow: hidden;
+}
+
+.app {
+  background: #000;
+}
+
+p {
+  color: #B7B4B4;
+}
+
+h2.h2 {
+  font-size: 3em;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.11);
+  border-radius: 45px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  background-size: 300% 100%;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    background-position: 100% 0;
+    transition: all .3s ease-in-out;
+    color: #FFFFFF;
+  }
+}
+
+.button-color {
+  background-image: linear-gradient(270deg, #E935B6, #ED7E40, #ED7E40, #E935B6);
+}
+
+///
+.diagram-text {
+  display: flex;
+  align-items: center;
+}
+
+.diagram-text__orange {
+  display: flex;
+  align-items: center;
+  color: #FAE57D;
+  margin-right: 32px;
+}
+
+.diagram-text__icon {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 70px;
+  display: block;
+  margin-right: 20px;
+}
+
+.diagram-text__number {
+  font-weight: 900;
+  font-size: 90px;
+  line-height: 105px;
+  color: #FAE57D;
+}
+
+.diagram-text__text {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #D7D7D7;
+  margin-bottom: 0;
+  max-width: 285px;
+}
+///
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1230px;
+  }
+}
