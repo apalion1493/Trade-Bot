@@ -8,7 +8,7 @@ html, body {
 }
 
 .app {
-  background: #000;
+  background: linear-gradient(265.21deg, #16041D 0.23%, #0E1013 100%);
 }
 
 p {
@@ -16,7 +16,7 @@ p {
 }
 
 h2.h2 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .btn {
@@ -82,6 +82,41 @@ h2.h2 {
   max-width: 285px;
 }
 ///
+
+.main-menu {
+  display: flex;
+}
+
+.container-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 184px;
+  margin-bottom: 45px;
+
+  &__line {
+    width: 54px;
+    height: 2px;
+    background: #2F2637;
+  }
+}
+
+.icon-circle {
+  width: 51px;
+  height: 51px;
+  display: block;
+}
+
+.icon-circle_parameters-white {
+  background: url("../img/icon-parameters__white.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
+.icon-circle_settings-black {
+  background: url("../img/icon-settings__black.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1230px;

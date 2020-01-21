@@ -3,7 +3,8 @@ const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const ejs = require('gulp-ejs');
-const uglify = require('gulp-uglify');
+// const uglify = require('gulp-uglify');
+const terser = require('gulp-terser');
 const rigger = require("gulp-rigger");
 const del = require('del');
 const imagemin = require('gulp-imagemin');
@@ -42,13 +43,16 @@ function scripts() {
         'src/assets/js/libs/scrollmagic/ScrollMagic.min.js',
         'src/assets/js/libs/scrollmagic/debug.addIndicators.min.js',
         'src/assets/js/libs/scrollmagic/animation.gsap.min.js',
+        'src/assets/js/libs/terminal/terminal.js',
+        'src/assets/js/libs/terminal/terminal_programs.js',
+        // 'src/assets/js/libs/terminal/jquery.terminal.min.js',
         'src/assets/js/main.js'
     ])
         .pipe(concat('libs.min.js'))
         .pipe(plumber())
         .pipe(rigger())
         .pipe(gulp.dest('build/assets/js'))
-        .pipe(uglify())
+        .pipe(terser())
         .pipe(gulp.dest('build/assets/js'))
         .pipe(browserSync.stream());
 }

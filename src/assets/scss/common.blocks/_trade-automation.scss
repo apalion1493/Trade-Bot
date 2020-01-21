@@ -1,0 +1,66 @@
+.trade-automation {
+  padding-bottom: 400px;
+  .trade-automation__container {
+    padding-left: 115px;
+  }
+
+  .nav-link {
+    padding: 0;
+    margin-right: 11px;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: initial;
+    border: 1px solid #ffffff;
+
+    &.active {
+      background: #ED7E40;
+      border: 1px solid #EB597C;
+    }
+  }
+}
+
+.trade-automation-container {
+  margin-top: 62px;
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 168.2%;
+
+    background: linear-gradient(to right, #ED7E40, #B02389);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-left: 10px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: baseline;
+
+    i {
+      background: #ED7E40;
+      height: 5px;
+      min-width: 13px;
+      border-radius: 5px;
+      margin-right: 17px;
+    }
+
+    p {
+      margin-bottom: 6px;
+      color: #B7B4B4;
+    }
+  }
+}
+
+.trade-automation__svg {
+  position: absolute;
+  top: 30px;
+  left: 70px;
+}
+

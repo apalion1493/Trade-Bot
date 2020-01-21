@@ -10,9 +10,11 @@
     "donutty": "^2.0.0",
     "jquery-appear-original": "^0.6.2",
     "jquery-circle-progress": "^1.2.2",
+    "jquery.terminal": "^2.12.0",
     "owl.carousel": "^2.3.4",
     "scrollmagic": "^2.0.7",
-    "tilt.js": "^1.2.1"
+    "tilt.js": "^1.2.1",
+    "typed.js": "^2.0.11"
   },
   "devDependencies": {
     "bootstrap": "^4.4.1",
@@ -27,6 +29,7 @@
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0",
     "gulp-uglify": "^3.0.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.14.3",

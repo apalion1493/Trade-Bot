@@ -1,10 +1,18 @@
 @import "bootstrap/bootstrap";
 @import "animate/animate";
+@import "terminal/terminal";
+//@import "terminal/jquery.terminal";
 
 
 @import "common.blocks/common";
 @import "common.blocks/header";
 @import "common.blocks/first-slide";
 @import "common.blocks/second-slide";
+@import "common.blocks/third-slide";
+@import "common.blocks/fourth-slide";
 @import "common.blocks/diagram-svg";
 @import "common.blocks/block-strategy";
+@import "common.blocks/burger";
+@import "common.blocks/trade-automation";
+@import "common.blocks/stage";
+@import "common.blocks/terminal";

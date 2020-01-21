@@ -1,0 +1,53 @@
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 55px;
+
+  &__number {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 168.2%;
+    color: #544C5B;
+  }
+
+  &__line {
+    position: relative;
+    width: 2px;
+    height: 188px;
+    background: #2F2637;
+  }
+
+  &__marker {
+    width: 6px;
+    height: 53px;
+    background: #544C5B;
+    position: absolute;
+    left: -2px;
+    transition: 0.2s;
+  }
+}
+
+.stage-first {
+  .stage__marker {
+    top: 0;
+  }
+}
+
+.stage-second {
+  .stage__marker {
+    top: 25%;
+  }
+}
+
+.stage-third {
+  .stage__marker {
+    top: 50%;
+  }
+}
+
+.stage-fourth {
+  .stage__marker {
+    top: 72%;
+  }
+}
