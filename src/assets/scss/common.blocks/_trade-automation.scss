@@ -64,3 +64,51 @@
   left: 70px;
 }
 
+#wallet-item {
+  transition: 0.2s;
+}
+
+#check-white {
+  opacity: 0;
+  transform: translate(206px, 309px);
+}
+
+.stage-second #tie-line path {
+  stroke: url(#linear-gradient);
+}
+
+.stage-second #wallet-item {
+  transform: translate(18px, 9px);
+  transition: 0.2s;
+}
+
+.stage-second .wallet-item__border {
+  stroke: #D9B35A;
+}
+
+/**/
+
+.stage-third #tie-line path {
+  stroke: url(#linear-gradient);
+}
+
+.stage-third #wallet-item {
+  transform: translate(18px, 9px);
+  transition: 0.2s;
+}
+
+.stage-third #wallet-item .wallet-item__border {
+  fill: #4BBE68;
+}
+
+.stage-third #wallet-item .wallet-item__rear {
+  fill: #2C8D45;
+}
+
+.stage-third #wallet-item__icon {
+  opacity: 0;
+}
+
+.stage-third #check-white {
+  opacity: 1;
+}

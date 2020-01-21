@@ -1,0 +1,101 @@
+.svg-schedule {
+
+}
+
+#icon-bot {
+  animation: moving-shema-bot 4s ease-in-out;
+  animation-fill-mode: forwards;
+  //transform: translate(-504px, -66px);
+}
+
+#icon-human {
+  animation: moving-shema-human 4s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moving-shema-bot {
+  0% {
+    /*transform: translate(-450px, 233px);*/
+    opacity: 0;
+  }
+
+  4% {
+    /*transform: translate(-435px, 220px);*/
+    opacity: 0.1;
+  }
+
+  9% {
+    /*transform: translate(-415px, 214px);*/
+    opacity: 0.2;
+  }
+
+  14% {
+    /*transform: translate(-377px, 171px);*/
+    opacity: 0.3;
+  }
+
+  20% {
+    /*transform: translate(-348px, 164px);*/
+    opacity: 0.4;
+  }
+
+  35% {
+    /*transform: translate(-280px, 128px);*/
+    opacity: 0.5;
+  }
+
+  40% {
+    /*transform: translate(-250px, 117px);*/
+    opacity: 0.6;
+  }
+
+  47% {
+    /*transform: translate(-235px, 90px);*/
+    opacity: 0.7;
+  }
+
+  53% {
+    /*transform: translate(-203px, 84px);*/
+    opacity: 0.8;
+  }
+
+  60% {
+    /*transform: translate(-170px, 67px);*/
+    opacity: 0.9;
+  }
+
+  68% {
+    /*transform: translate(-136px, 60px);*/
+    opacity: 1;
+  }
+
+  78% {
+    /*    transform: translate(-95px, 45px);*/
+  }
+
+  85% {
+    /*    transform: translate(-81px, 20px);*/
+  }
+
+  100% {
+    /*transform: translate(0, 0);*/
+  }
+}
+
+@keyframes moving-shema-human {
+  0% {
+    transform: translate(-450px, 25px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+//@-moz-document url-prefix() {
+//  #icon-bot {
+//    transform: translate(-450px,230px);
+//  }
+//}

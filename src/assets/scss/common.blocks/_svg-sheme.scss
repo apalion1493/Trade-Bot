@@ -1,0 +1,104 @@
+.svg-sheme {
+  #route_second__path {
+    transform: translate(283px, 169px);
+  }
+
+  .route_second__circle {
+    transform: translate(283px, 169px);
+  }
+
+  .circle-svg {
+    opacity: 0;
+  }
+
+  #route_first__circle-1 {
+    animation: opacity-animation 0.6s infinite linear;
+  }
+
+  #route_second__circle-1 {
+    animation: opacity-animation 1s infinite linear;
+    animation-delay: 0.5s;
+  }
+
+  #route_second__circle-2 {
+    animation: opacity-animation 1s infinite linear;
+    animation-delay: 1.8s;
+  }
+
+  #route_second__circle-3 {
+    animation: opacity-animation 1s infinite linear;
+    animation-delay: 2.2s;
+  }
+
+  #route_third__circle-1 {
+    animation: opacity-animation 0.6s infinite linear;
+    /*animation-delay: 2.2s;*/
+  }
+
+  #route_fourth__circle-1 {
+    animation: opacity-animation-long 1s infinite  linear;
+    animation-delay: 0.45s;
+  }
+
+  #route_fourth__circle-2 {
+    animation: opacity-animation-long 1s infinite  linear;
+    animation-delay: 1.9s;
+  }
+
+  #route_fourth__circle-3 {
+    animation: opacity-animation-long 1s infinite  linear;
+    animation-delay: 2.65s;
+  }
+
+  #route_five__circle-1 {
+    animation: opacity-animation-long 1s infinite  linear;
+    animation-delay: 0.51s;
+  }
+
+  #route_six__circle-1 {
+    animation: opacity-animation-long 1s infinite  linear;
+    animation-delay: 0.51s;
+  }
+
+  #route_seven__circle-1 {
+    animation: opacity-animation-long 1s infinite  linear;
+    animation-delay: 0.45s;
+  }
+  #route_seven__circle-2 {
+    animation: opacity-animation-long 1s infinite  linear;
+    animation-delay: 1.95s;
+  }
+
+
+  @keyframes opacity-animation {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes opacity-animation-long {
+    0% {
+      opacity: 0;
+    }
+
+    20% {
+      opacity: 1;
+    }
+
+    80% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+}
