@@ -40,7 +40,7 @@ h2.h2 {
   }
 }
 
-.button-color {
+.btn.button-color {
   background-image: linear-gradient(270deg, #E935B6, #ED7E40, #ED7E40, #E935B6);
 }
 
@@ -87,6 +87,16 @@ h2.h2 {
   display: flex;
 }
 
+.colorful-text {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 168.2%;
+
+  background: linear-gradient(to right, #ED7E40, #B02389);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .container-icons {
   display: flex;
   align-items: center;
@@ -112,8 +122,18 @@ h2.h2 {
   background-size: 100% auto;
 }
 
+.icon-circle_parameters-black {
+  background: url("../img/icon-parameters__black.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
 .icon-circle_settings-black {
   background: url("../img/icon-settings__black.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
+.icon-circle_settings-white {
+  background: url("../img/icon-settings__white.svg") no-repeat center;
   background-size: 100% auto;
 }
 
