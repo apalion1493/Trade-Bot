@@ -86,3 +86,59 @@
 .stage-third #check-white {
   opacity: 1;
 }
+
+@media (max-width: 1199.98px) {
+  .trade-automation__svg {
+    top: 170px;
+    height: 100%;
+  }
+
+  .trade-automation .trade-automation__container {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .trade-automation__svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .trade-automation {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #40264F;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .trade-automation__svg {
+    margin-bottom: 14px;
+  }
+
+  .trade-automation-container {
+    margin-top: 30px;
+  }
+
+  .trade-automation .trade-automation__container {
+    padding-left: 26px;
+  }
+
+  .trade-automation-container__title {
+    margin-bottom: 12px;
+  }
+
+  .trade-automation .nav-link {
+    width: 14px;
+    height: 14px;
+    margin-right: 16px;
+  }
+
+  .trade-automation .nav {
+    margin-left: 10px;
+  }
+}

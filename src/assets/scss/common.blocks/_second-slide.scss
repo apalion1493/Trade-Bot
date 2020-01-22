@@ -14,3 +14,27 @@
   line-height: 168.2%;
   margin-bottom: 0;
 }
+
+@media (max-width: 1199.98px) {
+  .second-slide {
+    padding-bottom: 510px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .second-slide {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .second-slide__title {
+    margin-bottom: 20px;
+  }
+
+  .second-slide {
+    border-bottom: 1px solid #40264F;
+    padding-bottom: 31px;
+  }
+}

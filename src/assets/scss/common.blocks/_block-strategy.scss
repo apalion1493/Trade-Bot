@@ -181,3 +181,155 @@
     left: 34px;
   }
 }
+
+@media (max-width: 991.98px) {
+  .block-strategy {
+    position: relative;
+    right: 0;
+  }
+
+  .block-strategy__main-img {
+    width: 616px;
+  }
+
+  .block-strategy__img-item {
+    width: 289px;
+  }
+
+  .block-strategy__img-item-1 {
+    top: 73px;
+    left: 176px;
+  }
+
+  .block-strategy__img-item-2 {
+    top: 92px;
+    left: 144px;
+  }
+
+  .block-strategy__img-item-3 {
+    top: 110px;
+    left: 112px;
+  }
+
+  .block-strategy__img-item-4 {
+    top: 128px;
+    left: 82px;
+    width: 288px;
+  }
+
+  .block-strategy__img-item-5 {
+    top: 146px;
+    left: 49px;
+  }
+
+  .block-strategy__img-item-6 {
+    top: 164px;
+    left: 19px;
+    width: 287px;
+  }
+
+  @keyframes moving-one {
+    0% {
+      top: 73px;
+      left: 176px;
+    }
+
+    50% {
+      top: 92px;
+      left: 144px;
+    }
+
+    100% {
+      top: 73px;
+      left: 176px;
+    }
+  }
+
+  @keyframes moving-two {
+    0% {
+      top: 92px;
+      left: 144px;
+    }
+
+    50% {
+      top: 110px;
+      left: 112px;
+    }
+
+    100% {
+      top: 92px;
+      left: 144px;
+    }
+  }
+
+  @keyframes moving-three {
+    0% {
+      top: 110px;
+      left: 112px;
+    }
+
+    50% {
+      top: 128px;
+      left: 82px;
+    }
+
+    100% {
+      top: 110px;
+      left: 112px;
+    }
+  }
+
+  //
+  //@keyframes moving-fourth {
+  //  0% {
+  //    top: 273px;
+  //    left: 168px;
+  //  }
+  //
+  //  50% {
+  //    top: 233px;
+  //    left: 237px;
+  //  }
+  //
+  //  100% {
+  //    top: 273px;
+  //    left: 168px;
+  //  }
+  //}
+  //
+  //@keyframes moving-five {
+  //  0% {
+  //    top: 312px;
+  //    left: 100px;
+  //  }
+  //
+  //  50% {
+  //    top: 351px;
+  //    left: 34px;
+  //  }
+  //
+  //  100% {
+  //    top: 312px;
+  //    left: 100px;
+  //  }
+  //}
+  //
+  //@keyframes moving-six {
+  //  0% {
+  //    top: 351px;
+  //    left: 34px;
+  //  }
+  //
+  //  50% {
+  //    top: 312px;
+  //    left: 100px;
+  //  }
+  //
+  //  100% {
+  //    top: 351px;
+  //    left: 34px;
+  //  }
+  //}
+}
+
+

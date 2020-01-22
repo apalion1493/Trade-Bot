@@ -20,3 +20,28 @@
     display: block;
   }
 }
+
+@media (max-width: 991.98px) {
+  .first-slide {
+    button {
+      display: none;
+    }
+  }
+
+  .first-slide__slogan {
+    font-size: $px34 - $px34-percent20;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .first-slide {
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+
+  .first-slide__slogan {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 40px;
+  }
+}
