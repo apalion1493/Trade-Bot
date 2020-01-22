@@ -1,0 +1,23 @@
+.five-slide {
+  padding-bottom: 50px;
+
+  &__title {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    margin-bottom: 40px;
+
+    li {
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

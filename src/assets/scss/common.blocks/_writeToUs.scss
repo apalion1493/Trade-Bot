@@ -19,11 +19,12 @@
   }
 
   h2 {
-    margin-bottom: 66px;
+    margin-bottom: 76px;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 50px;
+    line-height: 59px;
     color: #FFFFFF;
-    margin-top: 78px;
+    margin-top: 30px;
   }
 }
 
@@ -186,6 +187,9 @@ textarea {
   font-size: 14px;
   padding-left: 40px;
   padding-right: 40px;
+
+  background: #FAE57D;
+  height: 40px;
 }
 
 ::selection {

@@ -17,6 +17,7 @@ p {
 
 h2.h2 {
   font-size: 2.5em;
+  font-weight: bold;
 }
 
 .btn {
@@ -48,6 +49,7 @@ h2.h2 {
 .diagram-text {
   display: flex;
   align-items: center;
+  margin-top: 35px;
 }
 
 .diagram-text__orange {
@@ -135,6 +137,16 @@ h2.h2 {
 .icon-circle_settings-white {
   background: url("../img/icon-settings__white.svg") no-repeat center;
   background-size: 100% auto;
+}
+
+.svg-schedule__block {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 18px;
+  background: #130819;
+  bottom: 17px;
+  left: 44px;
 }
 
 @media (min-width: 1200px) {
