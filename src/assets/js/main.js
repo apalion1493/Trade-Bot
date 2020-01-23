@@ -15,6 +15,18 @@ $('#terminal').click(function () {
     $(".animated .command").last().focus();
 });
 
+$('#burger').click(function () {
+    $('.menu-modal').addClass('active');
+    $('#app').addClass('active');
+    $('body').addClass('active');
+});
+
+$('#main-menu-close').click(function () {
+    $('.menu-modal').removeClass('active');
+    $('#app').removeClass('active');
+    $('body').removeClass('active');
+});
+
 
 // let observeObject = function() {
 //     let _class = {
