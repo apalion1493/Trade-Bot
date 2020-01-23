@@ -21,3 +21,31 @@
     }
   }
 }
+
+.five-slide__sheme-title {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .five-slide {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #40264F;
+  }
+
+  .five-slide__sheme-title {
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 45px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  li.main-list__item {
+    margin-bottom: 15px;
+  }
+
+  .five-slide__title {
+    margin-bottom: 27px;
+  }
+}

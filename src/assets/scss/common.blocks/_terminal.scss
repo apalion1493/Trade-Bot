@@ -1,10 +1,6 @@
 .terminal-window {
   border-radius: 10px;
   overflow: hidden;
-
-  * {
-    //font-family: 'Roboto', sans-serif;
-  }
 }
 
 .terminal-window__main {
@@ -13,6 +9,7 @@
   overflow-y: scroll;
   padding-top: 26px;
   padding-left: 26px;
+  background: rgba(0, 0, 0, 0.9);
 
   .terminal-window__main-green {
     color: #28CB3F;
@@ -65,7 +62,9 @@
   align-items: center;
   position: absolute;
   left: 16px;
-  top: 7px;
+  top: 50%;
+  margin: auto;
+  transform: translate(0, -50%);
 }
 
 .terminal-window__btn {
@@ -91,6 +90,64 @@
   background: #28CB3F;
 }
 
-.terminal-window__main {
-  background: rgba(0, 0, 0, 0.9);
+@media (max-width: 991.98px) {
+  .terminal-window {
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #terminal {
+    font-size: 12px;
+  }
+
+  .terminal-window__btn {
+    width: 9px;
+    height: 9px;
+    margin-right: 6px;
+  }
+
+  .terminal-window__header span {
+    font-size: 12px;
+  }
+
+  .terminal-window__main {
+    padding: 15px 15px 0 15px;
+    min-height: 330px;
+    height: 330px;
+    * {
+      font-size: 12px;
+    }
+  }
+
+  .terminal-window__header span {
+    padding-left: 45px;
+  }
+
+  #terminal .command {
+    width: 150px;
+    font-size: 12px;
+  }
+
+  #terminal .answer p,
+  #terminal .answer h1,
+  #terminal .answer h2,
+  #terminal .answer h3{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 370px) {
+  .terminal-window__main {
+    min-height: 400px;
+    height: 400px;
+  }
+
+  .terminal-window__header {
+    height: 50px;
+  }
+
+  .terminal-window__header span {
+    padding-left: 75px;
+  }
 }
