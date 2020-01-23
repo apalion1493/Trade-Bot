@@ -28,6 +28,26 @@ html, body {
   background: linear-gradient(265.21deg, #16041D 0.23%, #0E1013 100%);
 }
 
+.app.active {
+  position: relative;
+  filter: blur(10px);
+
+  &:before {
+    content: '';
+    background: rgba(0, 0, 0, 0.77);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  }
+}
+
+body.active {
+  overflow: hidden;
+}
+
 p {
   color: #B7B4B4;
 }
@@ -211,6 +231,14 @@ h2.h2 {
 }
 
 @media (max-width: 767.98px) {
+  .app.active {
+    filter: none;
+
+    &:before {
+      background: initial;
+    }
+  }
+
   .display-3.first-slide__title {
     font-size: 36px;
     line-height: 42px;

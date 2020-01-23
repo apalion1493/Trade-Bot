@@ -45,7 +45,8 @@ function scripts() {
         'src/assets/js/libs/scrollmagic/animation.gsap.min.js',
         'src/assets/js/libs/terminal/terminal.js',
         'src/assets/js/libs/terminal/terminal_programs.js',
-        // 'src/assets/js/libs/terminal/jquery.terminal.min.js',
+        'src/assets/js/libs/owl/owl.carousel.min.js',
+        'src/assets/js/libs/tilt/vanilla-tilt.min.js',
         'src/assets/js/main.js'
     ])
         .pipe(concat('libs.min.js'))

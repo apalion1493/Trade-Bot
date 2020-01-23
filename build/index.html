@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<div id="app" class="app">
+<main id="app" class="app">
     <header class="container header">
         <div class="row">
             <div class="col-lg-9 col-9">
@@ -1110,7 +1110,7 @@
         </div>
         <button type="submit" class="btn blue-btn-form button-color">Заполнить бриф</button>
     </section>
-</div>
+</main>
 <section class="section menu-modal" id="menu-modal">
     <div class="menu-modal-wrapper">
         <div class="container">
@@ -1183,6 +1183,15 @@
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 <script>
     new WOW().init();
+
+    $('.owl-carousel').owlCarousel({
+        margin:27,
+        loop:false,
+        autoWidth:true,
+        items:1,
+        nav: false,
+        dots: false,
+    });
 
     $("#terminal").setAsTerminal("#terminal", "webdelo", "tradebot", "~", "$", PROGAMS);
 </script>
