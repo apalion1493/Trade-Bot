@@ -60,6 +60,142 @@
   stroke: #D9B35A;
 }
 
+.packMoney {
+  opacity: 0;
+}
+
+.cloud-completed {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.stage-third {
+
+  .packMoney {
+    opacity: 1;
+  }
+
+  .cloud-completed {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+
+  #packMoney-left {
+
+    .packMoney__bill {
+      opacity: 0;
+    }
+
+    .packMoney__bill-1 {
+      animation: bill-1 0.5s  linear;
+      animation-fill-mode: forwards;
+    }
+
+    .packMoney__bill-2 {
+      animation: bill-2 0.5s  linear;
+      animation-fill-mode: forwards;
+    }
+
+    .packMoney__bill-3 {
+      animation: bill-3 0.5s  linear;
+      animation-fill-mode: forwards;
+    }
+
+    .packMoney__bill-4 {
+      animation: bill-4 0.5s  linear;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  #packMoney-right {
+    transform: translate(122px, 73px);
+
+    .packMoney__bill {
+      opacity: 0;
+    }
+
+    .packMoney__bill-1 {
+      animation: bill-1 0.5s linear;
+      animation-fill-mode: forwards;
+    }
+
+    .packMoney__bill-2 {
+      animation: bill-2 0.5s linear;
+      animation-fill-mode: forwards;
+    }
+
+    .packMoney__bill-3 {
+      animation: bill-3 0.5s linear;
+      animation-fill-mode: forwards;
+    }
+
+    .packMoney__bill-4 {
+      animation: bill-4 0.5s linear;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+.stage-fourth {
+
+  #tie-line {
+    opacity: 0.1;
+    transition: opacity 0.5s;
+  }
+
+  #vpn-icon * {
+    //opacity: 0.1;
+    //transition: opacity 0.5s;
+    stroke: #0e0b14;
+    fill: #25212B;
+  }
+}
+
+@keyframes bill-1 {
+  from {
+    transform: translate(0, -10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes bill-2 {
+  from {
+    transform: translate(0, -30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes bill-3 {
+  from {
+    transform: translate(0, -50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes bill-4 {
+  from {
+    transform: translate(0, -70px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
 /**/
 
 .stage-third #tie-line path {
@@ -86,6 +222,8 @@
 .stage-third #check-white {
   opacity: 1;
 }
+
+
 
 @media (max-width: 1199.98px) {
   .trade-automation__svg {

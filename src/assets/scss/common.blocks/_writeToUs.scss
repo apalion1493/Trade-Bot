@@ -6,7 +6,7 @@
   filter: brightness(500%);
 }
 
-#write-ToUs {
+.write-ToUs {
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -173,12 +173,11 @@ textarea {
   //border-radius: 20px;
   padding: 9px 27px;
   //color: #ffffff;
-  margin-bottom: 55px;
   position: relative;
   z-index: 10;
   //text-transform: uppercase;
-  margin-top: 175px;
   height: 40px;
+  margin: 175px auto 55px;
 }
 
 .btn.write-ToUs__block-form-btn {
@@ -280,7 +279,7 @@ textarea {
     margin-top: 50px;
   }
 
-  #write-ToUs h2 {
+  .write-ToUs h2 {
     text-align: left !important;
     margin-top: 45px;
     margin-bottom: 40px;

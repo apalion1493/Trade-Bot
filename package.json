@@ -8,6 +8,7 @@
     "caniuse-lite": "^1.0.30001021",
     "del": "^3.0.0",
     "donutty": "^2.0.0",
+    "fullpage.js": "^3.0.8",
     "jquery-appear-original": "^0.6.2",
     "jquery-circle-progress": "^1.2.2",
     "jquery.terminal": "^2.12.0",

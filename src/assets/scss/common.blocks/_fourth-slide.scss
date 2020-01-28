@@ -16,16 +16,25 @@
     font-weight: bold;
     font-size: 30px;
     line-height: 130.7%;
+    padding-top: 46px;
   }
 
   &__list {
     margin-top: 40px;
     margin-bottom: 0;
   }
+
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background: initial;
+  }
 }
 
 .fourth-slide__second-content {
   margin-top: 50px;
+}
+
+.fourth-slide__title-mob {
+  display: none;
 }
 
 @media (max-width: 991.98px) {
@@ -41,11 +50,16 @@
   .fourth-slide__mob-wrapper {
     max-height: 250px;
     overflow: hidden;
+    margin-bottom: 35px;
   }
 
-  .fourth-slide__second-content {
-    padding-top: 20px;
-    border-top: 1px solid #40264F;
+  //.fourth-slide__second-content {
+  //  padding-top: 20px;
+  //  border-top: 1px solid #40264F;
+  //}
+
+  .fourth-slide__container-title {
+    padding-top: 25px;
   }
 }
 
