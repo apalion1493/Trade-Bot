@@ -69,6 +69,11 @@
   transition: opacity 0.5s;
 }
 
+.cloud-cancellation {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
 .stage-third {
 
   .packMoney {
@@ -148,6 +153,11 @@
     //transition: opacity 0.5s;
     stroke: #0e0b14;
     fill: #25212B;
+  }
+
+  .cloud-cancellation {
+    opacity: 1;
+    transition: opacity 0.5s;
   }
 }
 

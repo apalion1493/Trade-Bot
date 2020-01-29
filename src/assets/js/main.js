@@ -43,11 +43,13 @@ var myFullpage = new fullpage('#app', {
     lockAnchors: false,
     anchors:[
         'firstSlide',
+        'ndaSlide',
         'secondSlide',
         'thirdSlide',
         'fourthSlide',
         'secondSlide',
         'fiveSlide',
+        'technology',
         'otherJobs',
         'writeToUs'
     ],

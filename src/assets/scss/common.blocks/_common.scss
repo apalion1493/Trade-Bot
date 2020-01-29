@@ -193,6 +193,96 @@ h2.h2 {
   left: 44px;
 }
 
+.logo-laravel {
+  background: url("../img/logo-laravel.svg") no-repeat center;
+  background-size: 100% auto;
+  max-width: 217px;
+  width: 100%;
+  height: 57px;
+  display: block;
+}
+
+.logo-redis {
+  background: url("../img/logo-redis-white.png") no-repeat center;
+  background-size: 100% auto;
+  max-width: 103px;
+  width: 100%;
+  height: 34px;
+  display: block;
+}
+
+.logo-mysql {
+  background: url("../img/logo-mysql.svg") no-repeat center;
+  background-size: 100% auto;
+  max-width: 165px;
+  width: 100%;
+  height: 86px;
+  display: block;
+}
+
+.logo-php {
+  background: url("../img/logo-php.svg") no-repeat center;
+  background-size: 100% auto;
+  max-width: 100px;
+  width: 100%;
+  height: 27px;
+  display: block;
+}
+
+.logo-nginx {
+  background: url("../img/logo-nginx.svg") no-repeat center;
+  background-size: 100% auto;
+  max-width: 97px;
+  width: 100%;
+  height: 39px;
+  display: block;
+}
+
+.logo-qiwi {
+  background: url("../img/logo-qiwi.svg") no-repeat center;
+  background-size: 100% auto;
+  max-width: 113px;
+  width: 100%;
+  height: 33px;
+  display: block;
+}
+
+.logo-telegram {
+  background: url("../img/logo-telegram.png") no-repeat center;
+  background-size: 100% auto;
+  max-width: 45px;
+  width: 100%;
+  height: 45px;
+  display: block;
+}
+
+.logo-github {
+  background: url("../img/logo-github.svg") no-repeat center;
+  background-size: 100% auto;
+  max-width: 72px;
+  width: 100%;
+  height: 19px;
+  display: block;
+}
+
+.logo-jira {
+  background: url("../img/logo-jira.svg") no-repeat center;
+  background-size: 100% auto;
+  max-width: 176px;
+  width: 100%;
+  height: 23px;
+  display: block;
+}
+
+.logo-hubstaff {
+  background: url("../img/logo-hubstaff.svg") no-repeat center;
+  background-size: 100% auto;
+  max-width: 157px;
+  width: 100%;
+  height: 33px;
+  display: block;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1230px;
