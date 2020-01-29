@@ -11,7 +11,7 @@
 <body>
 
 <main id="app" class="app">
-    <section id="_firstSlide" data-percentage="80" data-centered="true" class="section first-slide fp-auto-height">
+    <section id="_firstSlide"  class="section first-slide fp-auto-height">
         <header class="container header">
             <div class="row">
                 <div class="col-lg-9 col-9">
@@ -136,17 +136,17 @@
             </div>
         </div>
     </section>
-    <section id="_ndaSlide" data-percentage="80" data-centered="true" class="section nda-slide fp-auto-height">
+    <section id="_ndaSlide"  class="section nda-slide fp-auto-height">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6 order-1 order-lg-0">
                     <div class="nda-slide__text">
                         <h2 class="h2 nda-slide__title">Приватный проект</h2>
                         <p><span>Проект разработан по заказу группы трейдеров криптовалютой</span>. В презентации не разграшаются некоторые особенности системы, которые защищены договором NDA.</p>
                         <p><span>Демонстрируются механизмы работы бота</span> и особенности алгоритмов, хорошо известных трейдерам, но не представляющих коммерческой тайны для заказчика. </p>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 order-0 order-lg-1">
                     <div class="nda-slide__wrapper">
                         <img class="nda-slide__img nda-slide__img-main" src="assets/img/nda-svg-1.svg" alt="">
                         <img class="nda-slide__img nda-slide__img-rear-1" src="assets/img/nda-img-2.png" alt="">
@@ -156,7 +156,7 @@
             </div>
         </div>
     </section>
-    <section id="_secondSlide" data-percentage="80" data-centered="true" class="section second-slide fp-auto-height">
+    <section id="_secondSlide"  class="section second-slide fp-auto-height">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -179,7 +179,7 @@
             </div>
         </div>
     </section>
-    <section id="_thirdSlide" data-percentage="80" data-centered="true" class="section third-slide trade-automation stage-first fp-auto-height">
+    <section id="_thirdSlide"  class="section third-slide trade-automation stage-first fp-auto-height">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -535,7 +535,7 @@
             </div>
         </div>
     </section>
-    <section id="_fourthSlide" data-percentage="80" data-centered="true" class="section state-one fourth-slide wow fp-auto-height">
+    <section id="_fourthSlide"  class="section state-one fourth-slide wow fp-auto-height">
         <div class="container position-relative">
             <h2 class="h2 fourth-slide__title">Инструменты для работы</h2>
             <div class="tab-content" id="pills-tabContent01">
@@ -644,7 +644,7 @@
             </ul>
         </div>
     </section>
-    <section id="_fiveSlide" data-percentage="80" data-centered="true" class="section five-slide fp-auto-height">
+    <section id="_fiveSlide"  class="section five-slide fp-auto-height">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 order-1 order-lg-0">
@@ -1100,18 +1100,22 @@
             </div>
         </div>
     </section>
-    <section id="_technology" data-percentage="80" data-centered="true" class="section technology fp-auto-height">
-        <div class="container">
+    <section id="_technology"  class="section technology fp-auto-height">
+        <div class="container position-relative">
             <h2 class="h2 technology__title">Технологический стек</h2>
             <div class="row">
-                <div class="col-5">
+                <div class="col-lg-5 col-6">
                     <div class="technology__wrapper">
                         <span class="technology__colorful-text colorful-text">Backend</span>
                         <div class="technology__container">
+                            <span class="bg-line bg-line__1"></span>
+                            <span class="bg-line bg-line__2"></span>
+                            <span class="bg-line bg-line__3"></span>
+                            <span class="bg-line bg-line__4"></span>
                             <div class="technology__block technology__block-laravel">
                                 <span class="technology__block-inside logo-laravel"></span>
                             </div>
-                            <div class="d-flex">
+                            <div class="technology__block-group">
                                 <div class="technology__block technology__block-redis">
                                     <span class="technology__block-inside logo-redis"></span>
                                 </div>
@@ -1127,41 +1131,42 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-6">
                     <div class="technology__wrapper technology__wrapper-second">
                         <span class="technology__colorful-text colorful-text">APIs</span>
                         <div class="technology__container">
-                            <div class="technology__container">
-                                <div class="technology__block technology__block-qiwi">
-                                    <span class="technology__block-inside logo-qiwi"></span>
-                                </div>
-                                <div class="technology__block technology__block-telegram">
-                                    <span class="technology__block-inside logo-telegram"></span>
-                                    <span class="technology__block-telegramText">Telegram Bot</span>
-                                    <span class="technology__block-colorWhite">API</span>
-                                </div>
-                                <div class="technology__block technology__block-proxy">
-                                    <span class="technology__block-inside technology__block-logo-proxy">Proxy</span>
-                                    <span class="technology__block-colorWhite">API</span>
-                                </div>
+                            <span class="bg-line bg-line__5"></span>
+                            <span class="bg-line bg-line__6"></span>
+                            <div class="technology__block technology__block-qiwi">
+                                <span class="technology__block-inside logo-qiwi"></span>
+                            </div>
+                            <div class="technology__block technology__block-telegram">
+                                <span class="technology__block-inside logo-telegram"></span>
+                                <span class="technology__block-telegramText">Telegram Bot</span>
+                                <span class="technology__block-colorWhite">API</span>
+                            </div>
+                            <div class="technology__block technology__block-proxy">
+                                <span class="technology__block-inside technology__block-logo-proxy">Proxy</span>
+                                <span class="technology__block-colorWhite">API</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3">
                     <div class="technology__wrapper">
                         <span class="technology__colorful-text colorful-text">Other</span>
                         <div class="technology__container">
-                            <div class="technology__container">
-                                <div class="technology__block technology__block-github">
-                                    <span class="technology__block-inside logo-github"></span>
-                                </div>
-                                <div class="technology__block technology__block-jira">
-                                    <span class="technology__block-inside logo-jira"></span>
-                                </div>
-                                <div class="technology__block technology__block-hubstaff">
-                                    <span class="technology__block-inside logo-hubstaff"></span>
-                                </div>
+                            <span class="bg-line bg-line__7"></span>
+                            <span class="bg-line bg-line__8"></span>
+                            <span class="bg-line bg-line__9"></span>
+                            <div class="technology__block technology__block-right technology__block-github">
+                                <span class="technology__block-inside logo-github"></span>
+                            </div>
+                            <div class="technology__block technology__block-right technology__block-jira">
+                                <span class="technology__block-inside logo-jira"></span>
+                            </div>
+                            <div class="technology__block technology__block-right technology__block-hubstaff">
+                                <span class="technology__block-inside logo-hubstaff"></span>
                             </div>
                         </div>
                     </div>
@@ -1169,7 +1174,7 @@
             </div>
         </div>
     </section>
-    <section id="_otherJobs" data-percentage="80" data-centered="true" class="section other-jobs fp-section active fp-completely fp-auto-height">
+    <section id="_otherJobs"  class="section other-jobs fp-section active fp-completely fp-auto-height">
         <div class="container d-flex flex-column align-items-center">
             <h2 class="text-center other-jobs__title">Наши другие работы</h2>
             <div class="row other-jobs__row">
@@ -1220,7 +1225,7 @@
             <button class="btn other-jobs__btn button-color mt-3">Все портфолио</button>
         </div>
     </section>
-    <section id="_writeToUs" data-percentage="80" data-centered="true" class="section write-ToUs flex-column align-items-center fp-auto-height">
+    <section id="_writeToUs"  class="section write-ToUs flex-column align-items-center fp-auto-height">
         <div class="container d-flex flex-column align-items-center">
             <h2 class="text-center h2">Хотите подобный проект?</h2>
             <div class="row write-ToUs__row">

@@ -283,6 +283,76 @@ h2.h2 {
   display: block;
 }
 
+.bg-line {
+  position: absolute;
+  z-index: 0;
+  opacity: 0.4;
+  height: 1px;
+}
+
+.bg-line__1 {
+  width: 51px;
+  background: #D4595E;
+  top: 57px;
+  left: 325px;
+}
+
+.bg-line__2 {
+  width: 13px;
+  background: #D4595E;
+  top: 193px;
+  left: 15px;
+}
+
+.bg-line__3 {
+  width: 26px;
+  background: #D4595E;
+  top: 340px;
+  left: -25px;
+}
+
+.bg-line__4 {
+  width: 15px;
+  background: #D4595E;
+  top: 320px;
+  left: 375px;
+}
+
+.bg-line__5 {
+  width: 17px;
+  background: #79AEDF;
+  top: 205px;
+  left: 10px;
+}
+
+.bg-line__6 {
+  width: 17px;
+  background: #79AEDF;
+  top: 315px;
+  left: 190px;
+}
+
+.bg-line__7 {
+  width: 15px;
+  background: #D4595E;
+  top: 57px;
+  left: -40px;
+}
+
+.bg-line__8 {
+  width: 9px;
+  background: #D4595E;
+  top: 200px;
+  left: 305px;
+}
+
+.bg-line__9 {
+  width: 36px;
+  background: #D4595E;
+  top: 355px;
+  left: -25px;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1230px;
