@@ -1,5 +1,11 @@
 .trade-automation {
 
+  .tab-content>.tab-pane {
+    min-width: 450px !important;
+    min-height: 210px;
+    margin-bottom: 430px;
+  }
+
   .trade-automation__container {
     padding-left: 115px;
   }
@@ -18,6 +24,10 @@
       border: 1px solid #EB597C;
     }
   }
+}
+
+.trade-automation__container-btn {
+  display: none;
 }
 
 .trade-automation-container {
@@ -69,8 +79,7 @@
 
   #wallet-item {
     transform: translate(18px, 9px);
-    //transition-delay: 1s;
-    transition: transform 0.2s 1s;
+    transition: transform 0.2s;
   }
 
   .wallet-item__border {
@@ -86,7 +95,7 @@
 
   .cloud-completed {
     opacity: 1;
-    transition: opacity 0.5s 1s;
+    transition: opacity 0.5s;
   }
 
   #packMoney-left {
@@ -237,7 +246,7 @@
 
 @media (max-width: 1199.98px) {
   .trade-automation__svg {
-    top: 170px;
+    top: 20px;
   }
 
   .trade-automation .trade-automation__container {
@@ -250,16 +259,21 @@
     position: relative;
     top: 0;
     left: 0;
-    width: 90%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 100%;
+    max-width: 390px;
   }
 
   .trade-automation {
     padding-bottom: 30px;
     border-bottom: 1px solid #40264F;
+  }
+
+  .trade-automation .tab-content>.tab-pane {
+    margin-bottom: 100px;
   }
 }
 
@@ -288,5 +302,9 @@
 
   .trade-automation .nav {
     margin-left: 10px;
+  }
+
+  .trade-automation .tab-content>.tab-pane {
+    margin-bottom: 0;
   }
 }

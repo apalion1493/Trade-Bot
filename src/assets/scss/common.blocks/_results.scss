@@ -1,0 +1,26 @@
+.results {
+
+}
+
+.results-container__text {
+  font-size: 20px;
+  line-height: 23px;
+  color: #B7B4B4;
+}
+
+.results-container__text-highlighted {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 368px;
+  padding: 30px 25px 70px;
+  border: 1px solid #EA39B1;
+  border-radius: 10px;
+  margin-top: 74px;
+}
