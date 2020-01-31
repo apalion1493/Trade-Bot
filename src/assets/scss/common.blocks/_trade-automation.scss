@@ -1,5 +1,5 @@
 .trade-automation {
-  padding-bottom: 400px;
+
   .trade-automation__container {
     padding-left: 115px;
   }
@@ -47,19 +47,6 @@
   transform: translate(206px, 309px);
 }
 
-.stage-second #tie-line path {
-  stroke: url(#linear-gradient);
-}
-
-.stage-second #wallet-item {
-  transform: translate(18px, 9px);
-  transition: 0.2s;
-}
-
-.stage-second .wallet-item__border {
-  stroke: #D9B35A;
-}
-
 .packMoney {
   opacity: 0;
 }
@@ -74,6 +61,23 @@
   transition: opacity 0.5s;
 }
 
+.stage-second {
+
+  #tie-line path {
+    stroke: url(#linear-gradient);
+  }
+
+  #wallet-item {
+    transform: translate(18px, 9px);
+    //transition-delay: 1s;
+    transition: transform 0.2s 1s;
+  }
+
+  .wallet-item__border {
+    stroke: #D9B35A;
+  }
+}
+
 .stage-third {
 
   .packMoney {
@@ -82,7 +86,7 @@
 
   .cloud-completed {
     opacity: 1;
-    transition: opacity 0.5s;
+    transition: opacity 0.5s 1s;
   }
 
   #packMoney-left {
@@ -139,6 +143,31 @@
       animation-fill-mode: forwards;
     }
   }
+
+  #tie-line path {
+    stroke: url(#linear-gradient);
+  }
+
+  #wallet-item {
+    transform: translate(18px, 9px);
+    transition: 0.2s;
+
+    .wallet-item__border {
+      fill: #4BBE68;
+    }
+
+    .wallet-item__rear {
+      fill: #2C8D45;
+    }
+  }
+
+  #wallet-item__icon {
+    opacity: 0;
+  }
+
+  #check-white {
+    opacity: 1;
+  }
 }
 
 .stage-fourth {
@@ -149,8 +178,6 @@
   }
 
   #vpn-icon * {
-    //opacity: 0.1;
-    //transition: opacity 0.5s;
     stroke: #0e0b14;
     fill: #25212B;
   }
@@ -207,33 +234,6 @@
 }
 
 /**/
-
-.stage-third #tie-line path {
-  stroke: url(#linear-gradient);
-}
-
-.stage-third #wallet-item {
-  transform: translate(18px, 9px);
-  transition: 0.2s;
-}
-
-.stage-third #wallet-item .wallet-item__border {
-  fill: #4BBE68;
-}
-
-.stage-third #wallet-item .wallet-item__rear {
-  fill: #2C8D45;
-}
-
-.stage-third #wallet-item__icon {
-  opacity: 0;
-}
-
-.stage-third #check-white {
-  opacity: 1;
-}
-
-
 
 @media (max-width: 1199.98px) {
   .trade-automation__svg {

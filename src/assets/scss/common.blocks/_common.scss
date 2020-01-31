@@ -18,6 +18,7 @@ $px20-percent20: $px20-coefficient * 20;
 html, body {
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
+  background: linear-gradient(265.21deg, #16041D 0.23%, #0E1013 100%);
 }
 
 .section {
@@ -25,7 +26,7 @@ html, body {
 }
 
 .app {
-  background: linear-gradient(265.21deg, #16041D 0.23%, #0E1013 100%);
+
 }
 
 .app.active {
@@ -352,6 +353,10 @@ h2.h2 {
   top: 355px;
   left: -25px;
 }
+
+//.fp-controlArrow {
+//  display: none;
+//}
 
 @media (min-width: 1200px) {
   .container {
