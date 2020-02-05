@@ -49,6 +49,18 @@
   }
 }
 
+.technology__block-large {
+  max-width: 444px;
+}
+
+.technology__block-small {
+  max-width: 200px;
+}
+
+.technology__block-medium {
+  max-width: 261px;
+}
+
 .technology__block-right {
   &:before {
     left: -6px;
@@ -86,54 +98,54 @@
   padding-right: 8px;
 }
 
-.technology__block-laravel {
-  max-width: 304px;
-}
-
-.technology__block-redis {
-  max-width: 177px;
-  left: 50px;
-}
-
-.technology__block-mysql {
-  max-width: 194px;
-  left: 90px;
-}
-
-.technology__block-phpNginx {
-  max-width: 322px;
-  left: 26px;
-}
-
-.technology__block-qiwi {
-  max-width: 170px;
-}
-
-.technology__block-telegram {
-  max-width: 257px;
-  left: 35px;
-}
-
-.technology__block-proxy {
-  max-width: 170px;
-}
-
-.technology__block-github {
-  max-width: 170px;
-}
-
-.technology__block-jira {
-  max-width: 220px;
-  left: 67px;
-}
-
-.technology__block-hubstaff {
-  max-width: 228px;
-  left: 26px;
-}
+//.technology__block-laravel {
+//  max-width: 304px;
+//}
+//
+//.technology__block-redis {
+//  max-width: 177px;
+//  left: 50px;
+//}
+//
+//.technology__block-mysql {
+//  max-width: 194px;
+//  left: 90px;
+//}
+//
+//.technology__block-phpNginx {
+//  max-width: 322px;
+//  left: 26px;
+//}
+//
+//.technology__block-qiwi {
+//  max-width: 170px;
+//}
+//
+//.technology__block-telegram {
+//  max-width: 257px;
+//  left: 35px;
+//}
+//
+//.technology__block-proxy {
+//  max-width: 170px;
+//}
+//
+//.technology__block-github {
+//  max-width: 170px;
+//}
+//
+//.technology__block-jira {
+//  max-width: 220px;
+//  left: 67px;
+//}
+//
+//.technology__block-hubstaff {
+//  max-width: 228px;
+//  left: 26px;
+//}
 
 .technology__wrapper-second {
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
 .technology__container {
@@ -141,24 +153,19 @@
 }
 
 .technology__block-group {
-  max-width: 413px;
+  max-width: 444px;
   width: 100%;
   display: flex;
-}
-
-@media (max-width: 1240px) {
-  .technology__block-jira {
-    left: 48px;
-  }
+  justify-content: space-between;
 }
 
 @media (max-width: 1199.98px) {
-  .technology__block-redis {
-    left: 15px;
+  .technology__wrapper-second {
+    padding-left: 15px;
   }
 
-  .technology__block-mysql {
-    left: 40px;
+  .technology__block-small {
+    max-width: 48%;
   }
 }
 
@@ -170,10 +177,22 @@
   }
 
   .technology__wrapper-second {
-    padding-left: 40px;
+    padding-left: 0;
   }
 
-  .technology__block-jira {
-    left: 25px;
+  .technology__block-group {
+    max-width: 100%;
+  }
+
+  .technology__block-large {
+    max-width: 100%;
+  }
+
+  .technology__block-small {
+    max-width: 48%;
+  }
+
+  .technology__block-medium {
+    max-width: 100%;
   }
 }

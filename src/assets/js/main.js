@@ -1,46 +1,150 @@
-// var massStep = ['#pills-home-tab', '#pills-profile-tab', '#pills-contact-tab', '#pills-contact-tab1'];
-// var massStepClass = ['stage-first', 'stage-second', 'stage-third', 'stage-fourth'];
+$(document).ready(function($){
+    $('#terminal').click(function () {
+        $(".animated .command").last().focus();
+    });
+
+    $('#burger').click(function () {
+        $('.menu-modal').addClass('active');
+        $('#app').addClass('active');
+        $('body').addClass('active');
+    });
+
+    $('#main-menu-close').click(function () {
+        $('.menu-modal').removeClass('active');
+        $('#app').removeClass('active');
+        $('body').removeClass('active');
+    });
+
+    $('.icon-circle_parameters').click(function () {
+        $('.fourth-slide').removeClass('state-two').addClass('state-one');
+        $('#pills-home-tab01-01').click();
+    });
+
+    $('.icon-circle_settings').click(function () {
+        $('.fourth-slide').removeClass('state-one').addClass('state-two');
+        $('#pills-profile-tab02-01').click();
+    });
+
+    // for (let j = 0; j < 18; j++) {
+    //     $(function() {
+    //         $.each($('.results__treatment-circle'), function(i, el) {
+    //             setTimeout(function() {
+    //                 $(el).addClass('results__treatment-circleGreen');
+    //             }, 500 + (i * 500));
+    //         });
+    //     });
+    //     $('.results__treatment-circle').removeClass('results__treatment-circleGreen');
+    // }
+
+    setInterval($(function() {
+        let blockStatus = true;
+
+        if(blockStatus) {
+            blockStatus = false;
+            $({numberValue: 0}).animate({numberValue: 100}, {
+                duration: 60000,
+                easing: "linear",
+                step: function(val) {
+                    $(".animated .results__treatment-timer").html(Math.ceil(val));
+                }
+            });
+        }
+    }), 1000);
+
+});
+
+
+
+function fillingCheck() {
+    let counter = 0;
+    for(let i = 1, j = 603; i <= 6, j <= 3620; i++, j += 603) {
+        setTimeout(function() {
+            $('#results__treatment-circle-'+i).addClass('results__treatment-circleGreen');
+            counter++;
+            if(counter === 6) {
+                $('.results__treatment-circle').removeClass('results__treatment-circleGreen');
+            }
+        }, j);
+    }
+}
+
+let interval123 = setInterval(fillingCheck, 3620);
+
+for (let k = 0; k < 5; k++) {
+    fillingCheck();
+}
+
+setTimeout(function() {
+    clearInterval(interval123);
+}, 60000);
+
+
+// let i = 1;
+// for (let j = 0; j < 100; j++) {
+//     $('#results__treatment-circle-'+i).addClass('results__treatment-circleGreen');
+//     i++;
 //
-// for(let i = 0; i <= massStep.length; i++) {
-//     $(massStep[i]).click(function () {
-//         for (let j = 0; j <= massStepClass.length; j++) {
-//             $('.trade-automation').removeClass(massStepClass[j]);
-//         }
-//
-//         $('.trade-automation').addClass(massStepClass[i]);
-//     });
+//     if(i % 6 === 0) {
+//         $('.results__treatment-circle').removeClass('results__treatment-circleGreen');
+//         i = 1;
+//     }
+//     sleep();
+//     // setTimeout(function() {
+//     //
+//     //     // console.log(i);
+//     // }, 1000);
+//     console.log(i);
 // }
 
-$('#terminal').click(function () {
-    $(".animated .command").last().focus();
-});
+// let i = 1;
 
-$('#burger').click(function () {
-    $('.menu-modal').addClass('active');
-    $('#app').addClass('active');
-    $('body').addClass('active');
-});
 
-$('#main-menu-close').click(function () {
-    $('.menu-modal').removeClass('active');
-    $('#app').removeClass('active');
-    $('body').removeClass('active');
-});
 
-$('.icon-circle_parameters').click(function () {
-    $('.fourth-slide').removeClass('state-two').addClass('state-one');
-    $('#pills-home-tab01-01').click();
-});
 
-$('.icon-circle_settings').click(function () {
-    $('.fourth-slide').removeClass('state-one').addClass('state-two');
-    $('#pills-profile-tab02-01').click();
-});
+
+// function testFunction() {
+//     for(let j = 0;  j < 7; j++) {
+//         setInterval(animationCheck, 1000);
+//         // $('.results__treatment-circle').removeClass('results__treatment-circleGreen');
+//     }
+// }
+//
+// function animationCheck() {
+//     // let i = 1;
+//     //
+//     // if(i % 6 === 0) {
+//     //     $('.results__treatment-circle').removeClass('results__treatment-circleGreen');
+//     //     i = 1;
+//     // } else {
+//     //     $('#results__treatment-circle-' + i).addClass('results__treatment-circleGreen');
+//     //     i++;
+//     //
+//     // }
+//
+//     $('.results__treatment-circle').addClass('results__treatment-circleGreen');
+// }
+//
+// setInterval(testFunction, 7000);
+
+// let massId = ['#results__treatment-circle-1', '#results__treatment-circle-2', '#results__treatment-circle-3', '#results__treatment-circle-4', '#results__treatment-circle-5', '#results__treatment-circle-6'];
+//
+// for (let i = 0; i < 6; i++) {
+//     setInterval(function(){
+//         $(massId[i]).addClass('results__treatment-circleGreen');
+//     }, 1000);
+//
+// }
+
+
+
+
+
+
+
+
 
 
 let controller = new ScrollMagic.Controller();
-
-// let tween3 = TweenMax.to(".third-slide__container-1", 0.5, {className:'+=stage-first'});
 
 let tween3 = new TimelineMax();
 let tween2 = new TimelineMax();
