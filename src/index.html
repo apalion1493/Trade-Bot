@@ -161,14 +161,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="block-strategy wow" data-wow-offset="300">
-                        <img class="block-strategy__main-img" src="assets/img/strata-main.png" alt="">
-                        <img class="block-strategy__img-item block-strategy__img-item-1" src="assets/img/strata-main__item-1.png" alt="">
-                        <img class="block-strategy__img-item block-strategy__img-item-2" src="assets/img/strata-main__item-2.png" alt="">
-                        <img class="block-strategy__img-item block-strategy__img-item-3" src="assets/img/strata-main__item-3.png" alt="">
-                        <img class="block-strategy__img-item block-strategy__img-item-4" src="assets/img/strata-main__item-4.png" alt="">
-                        <img class="block-strategy__img-item block-strategy__img-item-5" src="assets/img/strata-main__item-5.png" alt="">
-                        <img class="block-strategy__img-item block-strategy__img-item-6" src="assets/img/strata-main__item-6.png" alt="">
+                    <div class="second-slide__container">
+                        <div class="block-strategy wow" data-wow-offset="300">
+                            <img class="block-strategy__main-img" src="assets/img/strata-main.png" alt="">
+                            <img class="block-strategy__img-item block-strategy__img-item-1" src="assets/img/strata-main__item-1.png" alt="">
+                            <img class="block-strategy__img-item block-strategy__img-item-2" src="assets/img/strata-main__item-2.png" alt="">
+                            <img class="block-strategy__img-item block-strategy__img-item-3" src="assets/img/strata-main__item-3.png" alt="">
+                            <img class="block-strategy__img-item block-strategy__img-item-4" src="assets/img/strata-main__item-4.png" alt="">
+                            <img class="block-strategy__img-item block-strategy__img-item-5" src="assets/img/strata-main__item-5.png" alt="">
+                            <img class="block-strategy__img-item block-strategy__img-item-6" src="assets/img/strata-main__item-6.png" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -539,6 +541,7 @@
     <section data-role="section" id="_fourthSlide" class="section state-one fourth-slide wow">
         <div class="container position-relative">
             <h2 class="h2 fourth-slide__title">Инструменты для работы</h2>
+            <div id="trigger2"></div>
             <div class="tab-content" id="pills-tabContent01">
                 <div class="tab-pane fade show active" id="pills-home01" role="tabpanel" aria-labelledby="pills-home-tab01">
                     <div class="row">
@@ -1095,7 +1098,7 @@
             <div class="row">
                 <div class="col-lg-5 col-12">
                     <div class="technology__wrapper">
-                        <span class="technology__colorful-text colorful-text">Backend</span>
+                        <span class="technology__colorful-text technology__colorful-title-1">Backend</span>
                         <div class="technology__container">
                             <span class="bg-line bg-line__1"></span>
                             <span class="bg-line bg-line__2"></span>
@@ -1121,7 +1124,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="technology__wrapper technology__wrapper-second">
-                        <span class="technology__colorful-text colorful-text">APIs</span>
+                        <span class="technology__colorful-text technology__colorful-title-2">APIs</span>
                         <div class="technology__container">
                             <span class="bg-line bg-line__4"></span>
                             <span class="bg-line bg-line__5"></span>
@@ -1142,7 +1145,7 @@
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="technology__wrapper">
-                        <span class="technology__colorful-text colorful-text">Other</span>
+                        <span class="technology__colorful-text technology__colorful-title-3">Other</span>
                         <div class="technology__container">
                             <span class="bg-line bg-line__6"></span>
                             <span class="bg-line bg-line__7"></span>
@@ -1164,27 +1167,30 @@
     <section data-role="section" id="_results" class="section results wow">
         <div class="container">
             <h3 class="h3 results__title">Что получилось в результате:</h3>
+            <div id="trigger3"></div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="results-container">
-                        <div class="results__treatment">
-                            <span class="results__treatment-timer">0</span>
-                            <div class="results__treatment-container">
-                                <span id="results__treatment-circle-1" class="results__treatment-circle"></span>
-                                <span id="results__treatment-circle-2" class="results__treatment-circle"></span>
-                                <span id="results__treatment-circle-3" class="results__treatment-circle"></span>
-                                <span id="results__treatment-circle-4" class="results__treatment-circle"></span>
-                                <span id="results__treatment-circle-5" class="results__treatment-circle"></span>
-                                <span id="results__treatment-circle-6" class="results__treatment-circle"></span>
+                        <div class="results-container__animation">
+                            <div class="results__treatment">
+                                <span class="results__treatment-timer">0</span>
+                                <div class="results__treatment-container">
+                                    <span id="results__treatment-circle-1" class="results__treatment-circle"></span>
+                                    <span id="results__treatment-circle-2" class="results__treatment-circle"></span>
+                                    <span id="results__treatment-circle-3" class="results__treatment-circle"></span>
+                                    <span id="results__treatment-circle-4" class="results__treatment-circle"></span>
+                                    <span id="results__treatment-circle-5" class="results__treatment-circle"></span>
+                                    <span id="results__treatment-circle-6" class="results__treatment-circle"></span>
+                                </div>
                             </div>
                         </div>
                         <p class="results-container__text">Обработка <span class="results-container__text-highlighted">до 100 сделок в минуту</span></p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="results-container">
-                        <div>
-                            <svg width="158" height="158" viewBox="0 0 158 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="results-container__animation">
+                            <svg class="results-container__svg" width="158" height="158" viewBox="0 0 158 158" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="80" cy="3" r="3" fill="#F0F3C5"/>
                                 <circle cx="99.6362" cy="5.84855" r="3" transform="rotate(15 99.6362 5.84855)" fill="#C4C4C4"/>
                                 <circle cx="117.933" cy="13.6908" r="3" transform="rotate(30 117.933 13.6908)" fill="#C4C4C4"/>
@@ -1230,42 +1236,43 @@
                                     </linearGradient>
                                 </defs>
                             </svg>
-
                         </div>
                         <p class="results-container__text"><span class="results-container__text-highlighted">Ежесекундный мониторинг</span> стакана биржи</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="results-container">
-                        <div class="results-img-block">
-                            <span class="results-img-block__blue results-img-block__top-img"></span>
-                            <div class="results-img-block__main">
-                                <div class="results-img-block__main-active">
-                                    <img class="results-img__icon-group" src="assets/img/stupid-icons.svg" alt="">
-                                    <span class="results-img__icon-bot"></span>
+                        <div class="results-container__animation">
+                            <div class="results-img-block">
+                                <span class="results-img-block__blue results-img-block__top-img"></span>
+                                <div class="results-img-block__main">
+                                    <div class="results-img-block__main-active">
+                                        <img class="results-img__icon-group" src="assets/img/stupid-icons.svg" alt="">
+                                        <span class="results-img__icon-bot"></span>
+                                    </div>
+                                    <span class="results-img__icon-line"></span>
                                 </div>
-                                <span class="results-img__icon-line"></span>
+                                <span class="results-img-block__blue results-img-block__bottom-img"></span>
                             </div>
-                            <span class="results-img-block__blue results-img-block__bottom-img"></span>
                         </div>
                         <p class="results-container__text"><span class="results-container__text-highlighted">Защита от блокировки </span> LocalBitcoins и QIWI</p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
-                    <div class="results__wrapper-list">
+                <div class="col-lg-6">
+                    <div class="results__wrapper-list mt-mob pl-0 pl-lg-5">
                         <ul class="main-list">
-                            <li class="main-list__item"><i></i><p>Ассинхронный мониторинг сделок</p></li>
-                            <li class="main-list__item"><i></i><p>Простое масштабирование сервиса</p></li>
+                            <li class="main-list__item"><i></i><p><span>Ассинхронный мониторинг сделок</span></p></li>
+                            <li class="main-list__item"><i></i><p><span>Простое масштабирование</span> сервиса</p></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="results__wrapper-list">
+                <div class="col-lg-6">
+                    <div class="results__wrapper-list pl-0 pl-lg-4">
                         <ul class="main-list">
-                            <li class="main-list__item"><i></i><p>Управление торгами с телефона</p></li>
-                            <li class="main-list__item"><i></i><p>Анонимные подключения к сервисам через PROXY</p></li>
+                            <li class="main-list__item"><i></i><p>Управление торгами <span>с телефона</span></p></li>
+                            <li class="main-list__item"><i></i><p><span>Анонимные подключения</span> к сервисам через PROXY</p></li>
                         </ul>
                     </div>
                 </div>

@@ -308,3 +308,12 @@
     margin-bottom: 0;
   }
 }
+
+@media (max-width: 484px) {
+  .trade-automation {
+    .tab-content>.tab-pane {
+      min-width: 250px !important;
+      min-height: 210px;
+    }
+  }
+}

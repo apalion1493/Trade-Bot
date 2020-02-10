@@ -98,52 +98,6 @@
   padding-right: 8px;
 }
 
-//.technology__block-laravel {
-//  max-width: 304px;
-//}
-//
-//.technology__block-redis {
-//  max-width: 177px;
-//  left: 50px;
-//}
-//
-//.technology__block-mysql {
-//  max-width: 194px;
-//  left: 90px;
-//}
-//
-//.technology__block-phpNginx {
-//  max-width: 322px;
-//  left: 26px;
-//}
-//
-//.technology__block-qiwi {
-//  max-width: 170px;
-//}
-//
-//.technology__block-telegram {
-//  max-width: 257px;
-//  left: 35px;
-//}
-//
-//.technology__block-proxy {
-//  max-width: 170px;
-//}
-//
-//.technology__block-github {
-//  max-width: 170px;
-//}
-//
-//.technology__block-jira {
-//  max-width: 220px;
-//  left: 67px;
-//}
-//
-//.technology__block-hubstaff {
-//  max-width: 228px;
-//  left: 26px;
-//}
-
 .technology__wrapper-second {
   padding-left: 40px;
 }
@@ -159,6 +113,31 @@
   justify-content: space-between;
 }
 
+.technology__colorful-text {
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 168.2%;
+  margin-bottom: 21px;
+
+  background: linear-gradient(to right, #ED7E40, #B02389);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.technology__colorful-title-1 {
+  padding-right: 15px;
+}
+
+.technology__colorful-title-2 {
+  padding-right: 72px;
+}
+
+.technology__colorful-title-3 {
+  padding-right: 20px;
+}
+
 @media (max-width: 1199.98px) {
   .technology__wrapper-second {
     padding-left: 15px;
@@ -166,6 +145,12 @@
 
   .technology__block-small {
     max-width: 48%;
+  }
+
+  .technology__colorful-title-1,
+  .technology__colorful-title-2,
+  .technology__colorful-title-3 {
+    padding-right: 0;
   }
 }
 
