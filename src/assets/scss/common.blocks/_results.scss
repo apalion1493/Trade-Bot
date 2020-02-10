@@ -206,6 +206,10 @@
 }
 
 @media (max-width: 767.98px) {
+  .results {
+    margin-bottom: 0;
+  }
+
   .results-container {
     max-width: 100%;
     flex-direction: row;
@@ -215,6 +219,11 @@
     padding-top: 0;
     padding-bottom: 0;
     margin-top: 15px;
+  }
+
+  .results__title {
+    font-size: 24px;
+    line-height: 28px;
   }
 
   .results-container__text {

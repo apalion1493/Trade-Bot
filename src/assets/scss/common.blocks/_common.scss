@@ -456,4 +456,50 @@ h2.h2 {
   .container-icons__line {
     width: 33px;
   }
+
+  .logo-hubstaff {
+    max-width: 105px;
+  }
+
+  .logo-qiwi {
+    max-width: 95px;
+  }
+
+  .logo-jira {
+    max-width: 138px;
+  }
+
+  .logo-telegram {
+    min-width: 23px;
+    width: 23px;
+    height: 23px;
+  }
+
+  .logo-redis {
+    max-width: 76px;
+  }
+
+  .logo-mysql {
+    max-width: 127px;
+    left: 7px;
+  }
+
+  .logo-php {
+    max-width: 77px;
+  }
+
+  .logo-nginx {
+    max-width: 75px;
+  }
+
+  .logo-laravel {
+    max-width: 168px;
+  }
+
+}
+
+@media (max-width: 370px) {
+  .logo-jira {
+    max-width: 120px;
+  }
 }

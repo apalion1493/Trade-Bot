@@ -181,3 +181,37 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: 767.98px)  {
+  .technology {
+    padding-top: 37px;
+    padding-bottom: 20px;
+    border-top: 1px solid #40264f;
+  }
+
+  .technology__block-small {
+    width: 46%;
+  }
+
+  .technology__colorful-title-1, .technology__colorful-title-2, .technology__colorful-title-3 {
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .technology__block-telegramText {
+    padding-left: 10px;
+    padding-right: 7px;
+    font-size: 12px;
+  }
+
+  .technology__block-colorWhite {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 335px) {
+  .technology__block-telegramText,
+  .technology__block-colorWhite {
+    font-size: 10px;
+  }
+}

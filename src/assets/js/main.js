@@ -28,11 +28,6 @@ $(document).ready(function($){
 
 
 
-
-
-
-
-
 let controller = new ScrollMagic.Controller();
 
 let tween3 = new TimelineMax();
