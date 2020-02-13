@@ -32,8 +32,9 @@ let controller = new ScrollMagic.Controller();
 
 let tween3 = new TimelineMax();
 let tween2 = new TimelineMax();
-let tween5 = new TimelineMax();
-// let tween4 = new TimelineMax();
+let tween4 = new TimelineMax();
+// let tween5 = new TimelineMax();
+
 
 
 tween3.to(".third-slide__container-1", 1.5, {className:'+=stage-first'})
@@ -52,15 +53,11 @@ tween2.to(".tab-pane-1", 1.5, {className:'+=show active'})
     .to(".tab-pane-3", 0, {className:'-=show active'})
     .to(".tab-pane-4", 1.5, {className:'+=show active'});
 
-tween5.to(".third-slide__container-1", 1.5, {className:'+=stage-first'})
-    .to(".third-slide__container-1", 0, {className:'-=stage-first'})
-    .to(".third-slide__container-1", 1.5, {className:'+=stage-second'})
-    .to(".third-slide__container-1", 0, {className:'-=stage-second'})
-    .to(".third-slide__container-1", 1.5, {className:'+=stage-third'})
-    .to(".third-slide__container-1", 0, {className:'-=stage-third'})
-    .to(".third-slide__container-1", 1.5, {className:'+=stage-fourth'});
-
-
+tween4.to(".fourth-slide__tab-1", 1, {className:'+=show active'})
+    .to(".fourth-slide__tab-1", 1, {className:'+=show active'})
+    .to(".fourth-slide__tab-1", 1, {className:'-=show active'})
+    .to(".fourth-slide__tab-2", 2, {className:'+=show active'})
+    .to(".fourth-slide__tab-2", 2, {className:'+=show active'});
 
 let scene3 = new ScrollMagic.Scene({
     triggerElement: "#trigger1",
@@ -82,15 +79,19 @@ let scene2 = new ScrollMagic.Scene({
     .addTo(controller)
     .triggerHook(0);
 
-let scene5 = new ScrollMagic.Scene({
-    triggerElement: "#trigger3",
-    duration: "1000",
+let scene4 = new ScrollMagic.Scene({
+    triggerElement: "#trigger2",
+    duration: "800",
     offset: -50
 })
-    .setTween(tween5)
+    .setTween(tween4)
+    .setPin("#pills-tabContent01")
     .addTo(controller)
     .addIndicators()
     .triggerHook(0);
+
+
+
 
 // let scene4 = new ScrollMagic.Scene({
 //     triggerElement: "#trigger3",

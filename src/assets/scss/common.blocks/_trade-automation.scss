@@ -254,6 +254,13 @@
   }
 }
 
+@media (max-width: 1024.98px) {
+  .trade-automation__svg {
+    max-width: 515px;
+    top: -10px;
+  }
+}
+
 @media (max-width: 991.98px) {
   .trade-automation__svg {
     position: relative;
@@ -280,6 +287,7 @@
 @media (max-width: 767.98px) {
   .trade-automation__svg {
     margin-bottom: 14px;
+    max-width: 260px;
   }
 
   .trade-automation-container {

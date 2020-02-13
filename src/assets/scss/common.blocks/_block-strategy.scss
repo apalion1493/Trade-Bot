@@ -1,7 +1,7 @@
 .block-strategy {
   position: absolute;
   right: -470px;
-  top: 0;
+  top: -55px;
   visibility: visible !important;
 }
 
@@ -44,7 +44,7 @@
   left: 34px;
 }
 
-.block-strategy.animated {
+.animated .block-strategy {
   .block-strategy__img-item-1 {
     animation: moving-one 3s ease-in-out;
     animation-fill-mode: forwards;
@@ -185,11 +185,11 @@
 @media (max-width: 991.98px) {
   .block-strategy {
     position: absolute;
-    //right: 0;
     margin: auto;
     transform: translate(-42%, -50%);
     top: 50%;
     left: 50%;
+    width: 100%;
   }
 
   .block-strategy__main-img {
@@ -335,4 +335,8 @@
   }
 }
 
-
+@media (max-width: 767.98px) {
+  .block-strategy {
+    width: auto;
+  }
+}

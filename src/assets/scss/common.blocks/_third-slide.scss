@@ -22,6 +22,12 @@
   position: relative;
 }
 
+@media (max-width: 1024.98px) {
+  .third-slide .container {
+    padding-bottom: 0;
+  }
+}
+
 @media (max-width: 991.98px) {
   .third-slide {
     .container {

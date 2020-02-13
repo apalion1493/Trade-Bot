@@ -97,7 +97,7 @@
 }
 
 @media (max-width: 767.98px) {
-  #terminal {
+  .terminal {
     font-size: 12px;
   }
 
@@ -124,15 +124,15 @@
     padding-left: 45px;
   }
 
-  #terminal .command {
+  .terminal .command {
     width: 150px;
     font-size: 12px;
   }
 
-  #terminal .answer p,
-  #terminal .answer h1,
-  #terminal .answer h2,
-  #terminal .answer h3{
+  .terminal .answer p,
+  .terminal .answer h1,
+  .terminal .answer h2,
+  .terminal .answer h3{
     font-size: 12px;
   }
 }
