@@ -27,9 +27,9 @@
     this.listenKeys();
   };
 
-  //create .#terminal_lines div if not already present in terminal tag
+  //create #terminal_lines div if not already present in terminal tag
   Terminal.prototype.initTerminalLines = function(){
-    if(!$(".#terminal_lines").length)
+    if(!$("#terminal_lines").length)
       $(this.tag).append("<div id=\"#terminal_lines\"></div>");
   };
 
@@ -288,7 +288,7 @@
 
 
   Terminal.prototype.addAnswerLine = function (s){
-    $(this.tag+" .#terminal_lines").append("<div class=\"answer\">"+s+"</div>");
+    $(this.tag+" #terminal_lines").append("<div class=\"answer\">"+s+"</div>");
   };
 
   //crear terminal of all user lines && program answers
@@ -302,7 +302,7 @@
   Terminal.prototype.newPrompt = function(){
     //console.log("create_prompt");
     $(".command").prop('disabled', true);//disable previous inputs
-    $(this.tag+" .#terminal_lines").append(`<div class="user_line">
+    $(this.tag+" #terminal_lines").append(`<div class="user_line">
                                             <span class="prompt">`+this.getPrompt()+`</span>
                                             <input type="text" class="command"></span>
                                             </div>`);

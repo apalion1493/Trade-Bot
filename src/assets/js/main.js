@@ -26,6 +26,49 @@ $(document).ready(function($){
     });
 });
 
+function fillingCheck() {
+    let counter = 0;
+    for(let i = 1, j = 603; i <= 6, j <= 3620; i++, j += 603) {
+        setTimeout(function() {
+            $('#results__treatment-circle-'+i).addClass('results__treatment-circleGreen');
+            counter++;
+        }, j);
+    }
+}
+function removeCheck() {
+    $('.results__treatment-circle').removeClass('results__treatment-circleGreen');
+}
+function test123() {
+    fillingCheck();
+    setTimeout(function() {
+        removeCheck()
+    }, 3650);
+}
+
+function callback (event) {
+    if(event.type === "enter") {
+        $(function() {
+            $({numberValue: -1}).animate({numberValue: 100}, {
+                duration: 60000,
+                easing: "linear",
+                step: function(val) {
+                    $(".results__treatment-timer").html(Math.ceil(val));
+                }
+            });
+        });
+        test123();
+        interval = setInterval(test123, 3620);
+
+        if($(".results__treatment-timer").html() === '100') {
+            clearInterval(interval);
+            console.log('123');
+        }
+
+    } else if(event.type === "leave") {
+        clearInterval(interval);
+    }
+
+}
 
 
 let controller = new ScrollMagic.Controller();
@@ -33,7 +76,7 @@ let controller = new ScrollMagic.Controller();
 let tween3 = new TimelineMax();
 let tween2 = new TimelineMax();
 let tween4 = new TimelineMax();
-// let tween5 = new TimelineMax();
+let tween5 = new TimelineMax();
 
 
 
@@ -58,6 +101,9 @@ tween4.to(".fourth-slide__tab-1", 1, {className:'+=show active'})
     .to(".fourth-slide__tab-1", 1, {className:'-=show active'})
     .to(".fourth-slide__tab-2", 2, {className:'+=show active'})
     .to(".fourth-slide__tab-2", 2, {className:'+=show active'});
+
+tween5.to(".results", 0, {className:'+=animated'})
+    .from(".results", 0, {className:'-=animated'});
 
 let scene3 = new ScrollMagic.Scene({
     triggerElement: "#trigger1",
@@ -90,58 +136,13 @@ let scene4 = new ScrollMagic.Scene({
     .addIndicators()
     .triggerHook(0);
 
-
-
-
-// let scene4 = new ScrollMagic.Scene({
-//     triggerElement: "#trigger3",
-//     duration: "0",
-//     offset: -50
-// })
-//     .on('start', function() {
-//         setInterval($(function() {
-//             let blockStatus = true;
-//
-//             if(blockStatus) {
-//                 blockStatus = false;
-//                 $({numberValue: 0}).animate({numberValue: 100}, {
-//                     duration: 60000,
-//                     easing: "linear",
-//                     step: function(val) {
-//                         $(".results__treatment-timer").html(Math.ceil(val));
-//
-//                         if($(".results__treatment-timer").text() === '100') {
-//                             clearInterval(interval);
-//                         }
-//                     }
-//                 });
-//             }
-//         }), 1000)
-//     })
-//     .on('start', function() {
-//
-//     })
-//     .addTo(controller)
-//     .addIndicators()
-//     .triggerHook(0.8);
-
-
-
-function fillingCheck() {
-    let counter = 0;
-    for(let i = 1, j = 603; i <= 6, j <= 3620; i++, j += 603) {
-        setTimeout(function() {
-            $('#results__treatment-circle-'+i).addClass('results__treatment-circleGreen');
-            counter++;
-            if(counter === 6) {
-                $('.results__treatment-circle').removeClass('results__treatment-circleGreen');
-            }
-        }, j);
-    }
-}
-
-let interval = setInterval(fillingCheck, 3620);
-
-for (let k = 0; k < 5; k++) {
-    fillingCheck();
-}
+let scene5 = new ScrollMagic.Scene({
+    triggerElement: "#trigger3",
+    duration: "0",
+    offset: -50
+})
+    .on("enter leave", callback)
+    .setTween(tween5)
+    .addTo(controller)
+    .addIndicators()
+    .triggerHook(0.8);
