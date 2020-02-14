@@ -53,15 +53,17 @@ function callback (event) {
                 easing: "linear",
                 step: function(val) {
                     $(".results__treatment-timer").html(Math.ceil(val));
+                },
+                done(animation, jumpedToEnd) {
+                    clearInterval(interval);
                 }
             });
         });
         test123();
-        interval = setInterval(test123, 3620);
+        let interval = setInterval(test123, 3620);
 
         if($(".results__treatment-timer").html() === '100') {
             clearInterval(interval);
-            console.log('123');
         }
 
     } else if(event.type === "leave") {
