@@ -80,19 +80,16 @@ function callback(event) {
                 },
                 done(animation, jumpedToEnd) {
                     clearInterval(interval);
-                    $('.results__treatment-circle').addClass('results__treatment-circleGreen');
+                    $('.results__treatment-circle').addClass('active');
                 }
             });
         });
 
         paintingCycle();
 
-        if($(".results__treatment-timer").html() === '100') {
-            clearInterval(interval);
-        }
-
     } else if(event.type === "leave") {
         clearInterval(interval);
+        $('.results__treatment-circle').removeClass('active');
     }
 }
 
