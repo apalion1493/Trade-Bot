@@ -26,26 +26,50 @@ $(document).ready(function($){
     });
 });
 
+function treatmentContainerAnimationRight() {
+    $( '.results__treatment-container' ).animate({
+        left: '0',
+        right: '0',
+        opacity: '0'
+    }, 500, 'linear')
+}
+
+function treatmentContainerAnimationLeft() {
+    $( '.results__treatment-container' ).animate({
+        left: '0',
+        right: '0',
+        opacity: '1'
+    }, 500, 'linear')
+}
+
 function fillingCheck() {
+    treatmentContainerAnimationRight();
     let counter = 0;
-    for(let i = 1, j = 603; i <= 6, j <= 3620; i++, j += 603) {
+    for(let i = 1, j = 450; i <= 6, j <= 3620; i++, j += 603) {
         setTimeout(function() {
             $('#results__treatment-circle-'+i).addClass('results__treatment-circleGreen');
             counter++;
         }, j);
     }
+    treatmentContainerAnimationLeft();
 }
+
 function removeCheck() {
     $('.results__treatment-circle').removeClass('results__treatment-circleGreen');
 }
-function test123() {
+function paintingCycle () {
     fillingCheck();
     setTimeout(function() {
         removeCheck()
-    }, 3650);
+    }, 3820);
+
 }
 
-function callback (event) {
+
+let interval;
+function callback(event) {
+    clearInterval(interval);
+    interval = setInterval(paintingCycle, 3700);
     if(event.type === "enter") {
         $(function() {
             $({numberValue: -1}).animate({numberValue: 100}, {
@@ -56,11 +80,12 @@ function callback (event) {
                 },
                 done(animation, jumpedToEnd) {
                     clearInterval(interval);
+                    $('.results__treatment-circle').addClass('results__treatment-circleGreen');
                 }
             });
         });
-        test123();
-        let interval = setInterval(test123, 3620);
+
+        paintingCycle();
 
         if($(".results__treatment-timer").html() === '100') {
             clearInterval(interval);
@@ -69,18 +94,13 @@ function callback (event) {
     } else if(event.type === "leave") {
         clearInterval(interval);
     }
-
 }
 
-
 let controller = new ScrollMagic.Controller();
-
 let tween3 = new TimelineMax();
 let tween2 = new TimelineMax();
 let tween4 = new TimelineMax();
 let tween5 = new TimelineMax();
-
-
 
 tween3.to(".third-slide__container-1", 1.5, {className:'+=stage-first'})
     .to(".third-slide__container-1", 0, {className:'-=stage-first'})
@@ -129,11 +149,11 @@ let scene2 = new ScrollMagic.Scene({
 
 let scene4 = new ScrollMagic.Scene({
     triggerElement: "#trigger2",
-    duration: "800",
+    duration: "1200",
     offset: -50
 })
     .setTween(tween4)
-    .setPin("#pills-tabContent01")
+    .setPin("#container-instruments")
     .addTo(controller)
     .addIndicators()
     .triggerHook(0);
@@ -149,18 +169,10 @@ let scene5 = new ScrollMagic.Scene({
     .addIndicators()
     .triggerHook(0.8);
 
-
-
-
-
-
 (function () {
-
-    // Helpers
     const qs = document.querySelector.bind(document);
     const qsa = document.querySelectorAll.bind(document);
 
-    // Cache DOM elements
     let icons = qsa('#radar-icons path');
     const radius = qs('#radar-radius');
     const gradient = qs('#radar-gradient');
@@ -223,5 +235,4 @@ let scene5 = new ScrollMagic.Scene({
                 opacity: 0
             }, '-=.5')
     })
-
 })();

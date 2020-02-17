@@ -59,11 +59,12 @@
   margin-right: -5px;
   margin-top: 23px;
   position: relative;
-}
-.animated .results__treatment-container {
-  animation: shadow123 3.62s 16 ease-in-out;
+  opacity: 0;
 }
 
+.results__treatment-container.testClassAnimated {
+  animation: shadow123 3.9s infinite ease-in-out;
+}
 
 @keyframes shadow123 {
   0% {
